@@ -172,17 +172,49 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 708119923806264638, guid: df8eea15a4f1a494b9540acaf796fbc8, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 708119923806264638, guid: df8eea15a4f1a494b9540acaf796fbc8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8242852112647810847, guid: 8c50f1935b8b83d47b0764245b08fb49, type: 3}
+    - target: {fileID: 708119923806264638, guid: df8eea15a4f1a494b9540acaf796fbc8, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3601760830449674497, guid: df8eea15a4f1a494b9540acaf796fbc8, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 4a991a10fc4b68242bb74bd931c0bb6d, type: 2}
     - target: {fileID: 3601760830449674497, guid: df8eea15a4f1a494b9540acaf796fbc8, type: 3}
       propertyPath: m_Interpolate
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6603121918230326386, guid: df8eea15a4f1a494b9540acaf796fbc8, type: 3}
+      propertyPath: saltosMaximos
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6757949478251104848, guid: df8eea15a4f1a494b9540acaf796fbc8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 6757949478251104848, guid: df8eea15a4f1a494b9540acaf796fbc8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6757949478251104848, guid: df8eea15a4f1a494b9540acaf796fbc8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.25
+      objectReference: {fileID: 0}
     - target: {fileID: 6757949478251104848, guid: df8eea15a4f1a494b9540acaf796fbc8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4840639
+      value: -2.12
       objectReference: {fileID: 0}
     - target: {fileID: 6757949478251104848, guid: df8eea15a4f1a494b9540acaf796fbc8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.6002494
+      value: 0.23
       objectReference: {fileID: 0}
     - target: {fileID: 6757949478251104848, guid: df8eea15a4f1a494b9540acaf796fbc8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -215,6 +247,34 @@ PrefabInstance:
     - target: {fileID: 6757949478251104848, guid: df8eea15a4f1a494b9540acaf796fbc8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6757949478251104848, guid: df8eea15a4f1a494b9540acaf796fbc8, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7269787797169236083, guid: df8eea15a4f1a494b9540acaf796fbc8, type: 3}
+      propertyPath: m_Size.x
+      value: 0.2855075
+      objectReference: {fileID: 0}
+    - target: {fileID: 7269787797169236083, guid: df8eea15a4f1a494b9540acaf796fbc8, type: 3}
+      propertyPath: m_Size.y
+      value: 0.45994002
+      objectReference: {fileID: 0}
+    - target: {fileID: 7269787797169236083, guid: df8eea15a4f1a494b9540acaf796fbc8, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.00015923381
+      objectReference: {fileID: 0}
+    - target: {fileID: 7269787797169236083, guid: df8eea15a4f1a494b9540acaf796fbc8, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.001967311
+      objectReference: {fileID: 0}
+    - target: {fileID: 7269787797169236083, guid: df8eea15a4f1a494b9540acaf796fbc8, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 7269787797169236083, guid: df8eea15a4f1a494b9540acaf796fbc8, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.46
       objectReference: {fileID: 0}
     - target: {fileID: 8914842671173065857, guid: df8eea15a4f1a494b9540acaf796fbc8, type: 3}
       propertyPath: m_Name
