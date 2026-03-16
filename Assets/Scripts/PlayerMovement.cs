@@ -1,14 +1,17 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float velocidad = 5f;
+    private PlayerInputs controls;
+    private Vector2 moveInput;
 
+    public float velocidad = 5f;
     public float FuerzaDeSalto = 5f;
     public float LongitudRaycast = 0.1f;
     public LayerMask CapaDeSuelo;
 
-    public float combustible = 100;
+    public float combustible = 1000;
 
     public int saltosMaximos = 1;
 
@@ -24,6 +27,27 @@ public class PlayerMovement : MonoBehaviour
     private float proximoDash;
 
     private Rigidbody2D rb;
+
+    void Awake()
+    {
+        controls = new PlayerInputs();
+
+        controls.Player.Move.performed += ctx => moveInput = ctx.ReadValue<Vector2>();
+        controls.Player.Move.canceled += ctx => moveInput = Vector2.zero;
+
+        controls.Player.Jump.performed += ctx => Jump();
+        controls.Player.Dash.performed += ctx => Dash();
+    }
+
+    void OnEnable()
+    {
+        controls.Enable();
+    }
+
+    void OnDisable()
+    {
+        controls.Disable();
+    }
 
     void Start()
     {
@@ -43,13 +67,6 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // DASH
-        if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time >= proximoDash)
-        {
-            estaDasheando = true;
-            tiempoDash = duracionDash;
-            proximoDash = Time.time + cooldownDash;
-        }
-
         if (estaDasheando)
         {
             float direccion = transform.localScale.x;
@@ -63,8 +80,8 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        // Movimiento horizontal
-        float VelocidadX = Input.GetAxis("Horizontal");
+        // Movimiento horizontal con nuevo input system
+        float VelocidadX = moveInput.x;
 
         if (VelocidadX < 0)
         {
@@ -76,13 +93,25 @@ public class PlayerMovement : MonoBehaviour
         }
 
         rb.linearVelocity = new Vector2(VelocidadX * velocidad, rb.linearVelocity.y);
+    }
 
-        // SALTO / DOBLE SALTO
-        if (Input.GetKeyDown(KeyCode.Space) && saltosRestantes > 0)
+    void Jump()
+    {
+        if (saltosRestantes > 0)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
             rb.AddForce(Vector2.up * FuerzaDeSalto, ForceMode2D.Impulse);
             saltosRestantes--;
+        }
+    }
+
+    void Dash()
+    {
+        if (Time.time >= proximoDash)
+        {
+            estaDasheando = true;
+            tiempoDash = duracionDash;
+            proximoDash = Time.time + cooldownDash;
         }
     }
 
