@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 708119923806264638}
   - component: {fileID: 3601760830449674497}
   - component: {fileID: 7269787797169236083}
-  - component: {fileID: 6603121918230326386}
+  - component: {fileID: 1869258180036200395}
+  - component: {fileID: -2560401061136046056}
+  - component: {fileID: -3922321573717137918}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Untagged
@@ -167,7 +169,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6603121918230326386
+--- !u!114 &1869258180036200395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8914842671173065857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21e23b5c923764247b078b40dc5a99a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
+  puntoAtaque: {fileID: 0}
+  rangoAtaque: 1
+  "da\xF1o": 20
+  capaEnemigos:
+    serializedVersion: 2
+    m_Bits: 536870912
+  cooldownAtaque: 0.5
+  fuerzaRebote: 8
+  fuerzaGroundPound: 15
+  radioImpactoTerreno: 1.5
+  velocidadEspecial: 16
+  duracionEspecial: 0.6
+  fuerzaReboteEspecial: 10
+  cooldownEspecial: 1.2
+--- !u!114 &-2560401061136046056
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -178,16 +206,38 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ce1525d1a9cf1a438367f9bf6b227a9, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
-  velocidad: 6
-  FuerzaDeSalto: 12
-  LongitudRaycast: 0.55
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  velocidad: 8
+  FuerzaDeSalto: 10
+  LongitudRaycast: 0.6
   CapaDeSuelo:
     serializedVersion: 2
     m_Bits: 1073741824
-  combustible: 100
-  saltosMaximos: 1
+  fuel: {fileID: 0}
+  consumoHover: 20
+  estaHaciendoHover: 0
+  combustible: 1000
+  saltosMaximos: 2
   velocidadDash: 15
   duracionDash: 0.2
   cooldownDash: 1
   EnElSuelo: 0
+  CapaDePared:
+    serializedVersion: 2
+    m_Bits: 1073741824
+  velocidadDeslizamiento: 2
+  fuerzaSaltoPared: {x: 7, y: 7}
+--- !u!114 &-3922321573717137918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8914842671173065857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0503f8b724525d46ab105ee9f130ce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerFuel
+  combustibleMax: 100
+  regeneracionPorSegundo: 10

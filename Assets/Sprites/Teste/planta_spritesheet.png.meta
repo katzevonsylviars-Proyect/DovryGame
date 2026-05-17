@@ -1,0 +1,431 @@
+fileFormatVersion: 2
+guid: 00bbb5cc9378b0b448cb3b0b8a4b7f85
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2239286865220577661
+    second: planta_spritesheet_0
+  - first:
+      213: 6434443236401892602
+    second: planta_spritesheet_1
+  - first:
+      213: -5149237028813928212
+    second: planta_spritesheet_2
+  - first:
+      213: -4812033901363077608
+    second: planta_spritesheet_3
+  - first:
+      213: 601746007964208124
+    second: planta_spritesheet_4
+  - first:
+      213: -4950445388692745780
+    second: planta_spritesheet_5
+  - first:
+      213: -7294849780817477558
+    second: planta_spritesheet_6
+  - first:
+      213: -6394045184580398098
+    second: planta_spritesheet_7
+  - first:
+      213: 5566971382006726314
+    second: planta_spritesheet_8
+  - first:
+      213: -1738541631664035863
+    second: planta_spritesheet_9
+  - first:
+      213: -1968311269896440932
+    second: planta_spritesheet_10
+  - first:
+      213: 8215901453088228178
+    second: planta_spritesheet_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: planta_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 935
+        width: 172
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d79aba72a8b831f10800000000000000
+      internalID: 2239286865220577661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planta_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 850
+        width: 172
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afc4629480cbb4950800000000000000
+      internalID: 6434443236401892602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planta_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 765
+        width: 172
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce80241443c3a88b0800000000000000
+      internalID: -5149237028813928212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planta_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 680
+        width: 172
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81edd1679a8383db0800000000000000
+      internalID: -4812033901363077608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planta_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 595
+        width: 172
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb47b95ec4d95800800000000000000
+      internalID: 601746007964208124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planta_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 510
+        width: 172
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc19ff6c52c7c4bb0800000000000000
+      internalID: -4950445388692745780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planta_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 425
+        width: 172
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a40c98c26cc73ca90800000000000000
+      internalID: -7294849780817477558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planta_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 172
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee3d94f18c9c347a0800000000000000
+      internalID: -6394045184580398098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planta_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 255
+        width: 172
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaeb6431afad14d40800000000000000
+      internalID: 5566971382006726314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planta_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 170
+        width: 172
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e7ef61e8957fd7e0800000000000000
+      internalID: -1738541631664035863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planta_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 85
+        width: 172
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c93bc6e14572fa4e0800000000000000
+      internalID: -1968311269896440932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planta_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 172
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25380f487deb40270800000000000000
+      internalID: 8215901453088228178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d865fffd02335764c8704c4ee40b49ce
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":172.0,"y":85.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      planta_spritesheet_0: 2239286865220577661
+      planta_spritesheet_1: 6434443236401892602
+      planta_spritesheet_10: -1968311269896440932
+      planta_spritesheet_11: 8215901453088228178
+      planta_spritesheet_2: -5149237028813928212
+      planta_spritesheet_3: -4812033901363077608
+      planta_spritesheet_4: 601746007964208124
+      planta_spritesheet_5: -4950445388692745780
+      planta_spritesheet_6: -7294849780817477558
+      planta_spritesheet_7: -6394045184580398098
+      planta_spritesheet_8: 5566971382006726314
+      planta_spritesheet_9: -1738541631664035863
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
