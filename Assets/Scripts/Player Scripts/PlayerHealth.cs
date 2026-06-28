@@ -16,7 +16,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
-        // Manejo del tiempo de invulnerabilidad
+        // tiempo de invulnerabilidad
         if (esInvulnerable)
         {
             tiempoInvulnerableRestante -= Time.deltaTime;
@@ -50,11 +50,31 @@ public class PlayerHealth : MonoBehaviour
     {
         Debug.Log("Jugador murió");
 
-        // Opciones 
+        // Desactivamos los componentes de control
+        if (TryGetComponent<PlayerMovement>(out var movement)) movement.enabled = false;
+        if (TryGetComponent<PlayerAttack>(out var attack)) attack.enabled = false;
+
+        // Avisamos al GameManager 
+        if (GameManager.Instancia != null)
+        {
+            GameManager.Instancia.JugadorMuerto();
+        }
+        else
+        {
+            Debug.LogWarning("No se encontró una instancia de GameManager en la escena. Reiniciando de forma directa.");
+            UnityEngine.SceneManagement.SceneManager.LoadScene(
+                UnityEngine.SceneManagement.SceneManager.GetActiveScene().name
+            );
+        }
     }
+
     public void Curar(int cantidad)
     {
         vidaActual += cantidad;
         vidaActual = Mathf.Clamp(vidaActual, 0, vidaMaxima);
+    }
+    public float ObtenerVidaPorcentaje()
+    {
+        return (float)vidaActual / vidaMaxima;
     }
 }

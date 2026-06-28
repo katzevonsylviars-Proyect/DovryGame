@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1869258180036200395}
   - component: {fileID: -2560401061136046056}
   - component: {fileID: -3922321573717137918}
+  - component: {fileID: -3631097226973751075}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Untagged
@@ -241,3 +242,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerFuel
   combustibleMax: 100
   regeneracionPorSegundo: 10
+--- !u!114 &-3631097226973751075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8914842671173065857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b097611eee298cf49ae60da318bb1e5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  vidaMaxima: 100
+  tiempoInvulnerable: 1
