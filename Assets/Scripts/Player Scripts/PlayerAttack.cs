@@ -6,6 +6,7 @@ public class PlayerAttack : MonoBehaviour
     private PlayerInputs controls;
     private Rigidbody2D rb;
     private PlayerMovement playerMovement;
+    private PlayerFuel fuel;
 
     [Header("Ataque Básico")]
     public Transform puntoAtaque;
@@ -28,6 +29,7 @@ public class PlayerAttack : MonoBehaviour
     public float duracionEspecial = 0.6f;
     public float fuerzaReboteEspecial = 10f;
     public float cooldownEspecial = 1.2f;
+    public float costoCombustibleDash = 25f;
 
     private bool haciendoEspecial = false;
     private float tiempoEspecial;
@@ -52,6 +54,11 @@ public class PlayerAttack : MonoBehaviour
         controls.Disable();
         controls.Player.Attack.performed -= ctx => Atacar();
         controls.Player.Special.performed -= ctx => EjecutarEspecial();
+    }
+
+    void Start()
+    {
+        fuel = GetComponent<PlayerFuel>();
     }
 
     void Update()
@@ -126,13 +133,22 @@ public class PlayerAttack : MonoBehaviour
         {
             if (Time.time >= proximoEspecial)
             {
-                haciendoEspecial = true;
-                tiempoEspecial = duracionEspecial;
-                proximoEspecial = Time.time + cooldownEspecial;
-
-                if (playerMovement != null)
+                if (fuel != null && fuel.TieneCombustible(costoCombustibleDash))
                 {
-                    playerMovement.estaHaciendoHover = false;
+                    fuel.Consumir(costoCombustibleDash);
+
+                    haciendoEspecial = true;
+                    tiempoEspecial = duracionEspecial;
+                    proximoEspecial = Time.time + cooldownEspecial;
+
+                    if (playerMovement != null)
+                    {
+                        playerMovement.estaHaciendoHover = false;
+                    }
+                }
+                else
+                {
+                    Debug.Log("No tienes suficiente combustible para hacer un Dash.");
                 }
             }
         }
@@ -219,7 +235,7 @@ public class PlayerAttack : MonoBehaviour
         foreach (Collider2D enemigo in enemigosGolpeados)
         {
             Debug.Log("Golpeaste al enemigo hacia abajo: " + enemigo.name);
-            enemigoGolpeado = true;
+             enemigoGolpeado = true;
         }
 
         if (enemigoGolpeado)

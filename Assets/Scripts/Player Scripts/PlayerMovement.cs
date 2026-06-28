@@ -11,20 +11,15 @@ public class PlayerMovement : MonoBehaviour
     public float LongitudRaycast = 0.6f;
     public LayerMask CapaDeSuelo;
 
+    [Header("Coste de Habilidades")]
+    public float costoCombustibleDash = 25f;
+
     [Header("Combustible y Hover")]
     public PlayerFuel fuel;
     public float consumoHover = 20f;
     public bool estaHaciendoHover = false;
     private float tiempoUltimoSalto = -1f;
-
-    public float combustible = 1000;
-
-    public int saltosMaximos = 2;
-
-    public float velocidadDash = 15f;
-    public float duracionDash = 0.2f;
-    public float cooldownDash = 1f;
-
+    public int saltosMaximos = 1;
     public bool EnElSuelo;
 
     [Header("Escalada y Salto en Pared")]
@@ -36,10 +31,6 @@ public class PlayerMovement : MonoBehaviour
     private bool tocandoParedDerecha;
 
     private int saltosRestantes;
-    private bool estaDasheando;
-    private float tiempoDash;
-    private float proximoDash;
-
     private Rigidbody2D rb;
 
     void Awake()
@@ -113,20 +104,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 estaHaciendoHover = false;
             }
-        }
-
-        // DASH
-        if (estaDasheando)
-        {
-            float direccion = transform.localScale.x;
-            rb.linearVelocity = new Vector2(direccion * velocidadDash, 0);
-            tiempoDash -= Time.deltaTime;
-
-            if (tiempoDash <= 0)
-            {
-                estaDasheando = false;
-            }
-            return;
         }
 
         // MOVIMIENTO

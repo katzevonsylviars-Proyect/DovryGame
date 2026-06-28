@@ -460,9 +460,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3902658745020311031, guid: 7e914d9319833f1489fbe5c5be8d4f84, type: 3}
+      propertyPath: playerFuel
+      value: 
+      objectReference: {fileID: 571987694}
+    - target: {fileID: 3902658745020311031, guid: 7e914d9319833f1489fbe5c5be8d4f84, type: 3}
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 571987693}
+    - target: {fileID: 3902658745020311031, guid: 7e914d9319833f1489fbe5c5be8d4f84, type: 3}
+      propertyPath: barraCombustibleUI
+      value: 
+      objectReference: {fileID: 1108361077}
     - target: {fileID: 5548324227856680418, guid: 7e914d9319833f1489fbe5c5be8d4f84, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -566,6 +574,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b097611eee298cf49ae60da318bb1e5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+--- !u!114 &571987694 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -3922321573717137918, guid: df8eea15a4f1a494b9540acaf796fbc8, type: 3}
+  m_PrefabInstance: {fileID: 1401051995}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0503f8b724525d46ab105ee9f130ce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerFuel
 --- !u!4 &571987700 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6757949478251104848, guid: df8eea15a4f1a494b9540acaf796fbc8, type: 3}
