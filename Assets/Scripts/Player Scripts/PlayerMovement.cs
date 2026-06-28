@@ -50,7 +50,6 @@ public class PlayerMovement : MonoBehaviour
         controls.Player.Move.canceled += ctx => moveInput = Vector2.zero;
 
         controls.Player.Jump.performed += ctx => Jump();
-        controls.Player.Dash.performed += ctx => Dash();
     
         controls.Player.Attack.performed += ctx => AtacarInput();
     }
@@ -200,18 +199,6 @@ public class PlayerMovement : MonoBehaviour
         
         saltosRestantes = saltosMaximos;
         tiempoUltimoSalto = Time.time;
-    }
-
-    void Dash()
-    {
-        estaHaciendoHover = false;
-
-        if (Time.time >= proximoDash)
-        {
-            estaDasheando = true;
-            tiempoDash = duracionDash;
-            proximoDash = Time.time + cooldownDash;
-        }
     }
 
     void OnDrawGizmos()
