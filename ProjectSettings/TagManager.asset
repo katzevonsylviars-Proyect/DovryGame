@@ -34,10 +34,10 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Player
   - Enemy
   - Suelo
-  - 
+  - TerrenoDestructible
   m_SortingLayers:
   - name: Default
     uniqueID: 0

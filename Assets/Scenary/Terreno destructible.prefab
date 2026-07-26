@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2223339000318634793}
   - component: {fileID: 7649199124817673102}
   - component: {fileID: 6434829010788744816}
-  m_Layer: 29
+  m_Layer: 31
   m_Name: Terreno destructible
   m_TagString: Ground
   m_Icon: {fileID: 0}

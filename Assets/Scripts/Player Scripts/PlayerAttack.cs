@@ -97,6 +97,11 @@ public class PlayerAttack : MonoBehaviour
                 foreach (var enemigo in enemigosGolpeados)
                 {
                     Debug.Log("Golpeaste al enemigo con el Ground Pound: " + enemigo.name);
+                    EnemyHealth vidaEnemigo = enemigo.GetComponent<EnemyHealth>();
+                    if (vidaEnemigo != null)
+                    {
+                        vidaEnemigo.RecibirDaño(daño);
+                    }
 
                     DestructibleBlock bloque = enemigo.GetComponent<DestructibleBlock>();
                     if (bloque != null) bloque.RecibirDaño(daño);
@@ -119,8 +124,11 @@ public class PlayerAttack : MonoBehaviour
                 foreach (var enemigo in enemigosGolpeados)
                 {
                     Debug.Log("Golpeaste al enemigo con el Especial (Dash): " + enemigo.name);
-
-                    // NUEVO: Dañar bloque al hacer Dash contra él
+                    EnemyHealth vidaEnemigo = enemigo.GetComponent<EnemyHealth>();
+                    if (vidaEnemigo != null)
+                    {
+                        vidaEnemigo.RecibirDaño(daño);
+                    }
                     DestructibleBlock bloque = enemigo.GetComponent<DestructibleBlock>();
                     if (bloque != null) bloque.RecibirDaño(daño);
                 }
@@ -180,11 +188,21 @@ public class PlayerAttack : MonoBehaviour
         foreach (var enemigo in enemigosIzquierda)
         {
             Debug.Log("Daño al enemigo por impacto (izquierda): " + enemigo.name);
+            EnemyHealth vidaEnemigo = enemigo.GetComponent<EnemyHealth>();
+            if (vidaEnemigo != null)
+            {
+                vidaEnemigo.RecibirDaño(daño);
+            }
         }
 
         foreach (var enemigo in enemigosDerecha)
         {
             Debug.Log("Daño al enemigo por impacto (derecha): " + enemigo.name);
+            EnemyHealth vidaEnemigo = enemigo.GetComponent<EnemyHealth>();
+            if (vidaEnemigo != null)
+            {
+                vidaEnemigo.RecibirDaño(daño);
+            }
         }
     }
 
@@ -228,6 +246,11 @@ public class PlayerAttack : MonoBehaviour
         foreach (Collider2D enemigo in enemigosGolpeados)
         {
             Debug.Log("Golpeaste a: " + enemigo.name);
+            EnemyHealth vidaEnemigo = enemigo.GetComponent<EnemyHealth>();
+            if (vidaEnemigo != null)
+            {
+                vidaEnemigo.RecibirDaño(daño);
+            }
 
             DestructibleBlock bloque = enemigo.GetComponent<DestructibleBlock>();
             if (bloque != null) bloque.RecibirDaño(daño);
@@ -245,7 +268,12 @@ public class PlayerAttack : MonoBehaviour
         foreach (Collider2D enemigo in enemigosGolpeados)
         {
             Debug.Log("Golpeaste al enemigo hacia abajo: " + enemigo.name);
-             enemigoGolpeado = true;
+            enemigoGolpeado = true;
+            EnemyHealth vidaEnemigo = enemigo.GetComponent<EnemyHealth>();
+            if (vidaEnemigo != null)
+            {
+                vidaEnemigo.RecibirDaño(daño);
+            }
 
             DestructibleBlock bloque = enemigo.GetComponent<DestructibleBlock>();
             if (bloque != null) bloque.RecibirDaño(daño);

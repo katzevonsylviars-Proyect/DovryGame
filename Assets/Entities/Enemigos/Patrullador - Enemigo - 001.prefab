@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8914842671173065857
+--- !u!1 &5945536136154663306
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,44 +8,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6757949478251104848}
-  - component: {fileID: 708119923806264638}
-  - component: {fileID: 3601760830449674497}
-  - component: {fileID: 7269787797169236083}
-  - component: {fileID: 1869258180036200395}
-  - component: {fileID: -2560401061136046056}
-  - component: {fileID: -3922321573717137918}
-  - component: {fileID: -3631097226973751075}
-  m_Layer: 28
-  m_Name: Player 1
+  - component: {fileID: 8172485577613517607}
+  - component: {fileID: 982565019933294217}
+  - component: {fileID: 2347640184208478305}
+  - component: {fileID: 3691244700491621095}
+  - component: {fileID: 8952537402372891755}
+  - component: {fileID: 5110431474199211001}
+  m_Layer: 29
+  m_Name: Patrullador - Enemigo - 001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6757949478251104848
+--- !u!4 &8172485577613517607
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8914842671173065857}
+  m_GameObject: {fileID: 5945536136154663306}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.00000000844408, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.494217, y: 3.6608899, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &708119923806264638
+--- !u!212 &982565019933294217
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8914842671173065857}
+  m_GameObject: {fileID: 5945536136154663306}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -87,8 +85,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 1}
+  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Color: {r: 1, g: 0.43867922, b: 0.43867922, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -97,14 +95,14 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!50 &3601760830449674497
+--- !u!50 &2347640184208478305
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8914842671173065857}
+  m_GameObject: {fileID: 5945536136154663306}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -112,7 +110,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -123,18 +121,18 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!61 &7269787797169236083
+  m_Constraints: 0
+--- !u!61 &3691244700491621095
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8914842671173065857}
+  m_GameObject: {fileID: 5945536136154663306}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 4a991a10fc4b68242bb74bd931c0bb6d, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -170,87 +168,34 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1869258180036200395
+--- !u!114 &8952537402372891755
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8914842671173065857}
+  m_GameObject: {fileID: 5945536136154663306}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21e23b5c923764247b078b40dc5a99a1, type: 3}
+  m_Script: {fileID: 11500000, guid: 20af01c859878bf4ab8d9e2e71f21797, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
-  puntoAtaque: {fileID: 0}
-  rangoAtaque: 1
-  "da\xF1o": 20
-  capaEnemigos:
+  m_EditorClassIdentifier: Assembly-CSharp::PatrolEnemy
+  velocidad: 3
+  distanciaDeteccion: 0.5
+  capaObstaculos:
     serializedVersion: 2
-    m_Bits: 536870912
-  cooldownAtaque: 0.5
-  fuerzaRebote: 8
-  fuerzaGroundPound: 15
-  radioImpactoTerreno: 1.5
-  velocidadEspecial: 16
-  duracionEspecial: 0.6
-  fuerzaReboteEspecial: 10
-  cooldownEspecial: 1.2
-  costoCombustibleDash: 25
---- !u!114 &-2560401061136046056
+    m_Bits: 3221225472
+  "da\xF1oAlJugador": 20
+--- !u!114 &5110431474199211001
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8914842671173065857}
+  m_GameObject: {fileID: 5945536136154663306}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ce1525d1a9cf1a438367f9bf6b227a9, type: 3}
+  m_Script: {fileID: 11500000, guid: d5e02c73e21f8c14fb625b49faae1b23, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  velocidad: 8
-  FuerzaDeSalto: 10
-  LongitudRaycast: 0.6
-  CapaDeSuelo:
-    serializedVersion: 2
-    m_Bits: 1073741824
-  costoCombustibleDash: 25
-  fuel: {fileID: 0}
-  consumoHover: 20
-  estaHaciendoHover: 0
-  saltosMaximos: 2
-  EnElSuelo: 0
-  CapaDePared:
-    serializedVersion: 2
-    m_Bits: 1073741824
-  velocidadDeslizamiento: 2
-  fuerzaSaltoPared: {x: 7, y: 7}
---- !u!114 &-3922321573717137918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8914842671173065857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0503f8b724525d46ab105ee9f130ce4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerFuel
-  combustibleMax: 100
-  regeneracionPorSegundo: 10
---- !u!114 &-3631097226973751075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8914842671173065857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b097611eee298cf49ae60da318bb1e5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  vidaMaxima: 100
-  tiempoInvulnerable: 1
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  vida: 40
