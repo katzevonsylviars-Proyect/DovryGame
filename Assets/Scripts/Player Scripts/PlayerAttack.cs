@@ -97,6 +97,9 @@ public class PlayerAttack : MonoBehaviour
                 foreach (var enemigo in enemigosGolpeados)
                 {
                     Debug.Log("Golpeaste al enemigo con el Ground Pound: " + enemigo.name);
+
+                    DestructibleBlock bloque = enemigo.GetComponent<DestructibleBlock>();
+                    if (bloque != null) bloque.RecibirDaño(daño);
                 }
             }
         }
@@ -116,6 +119,10 @@ public class PlayerAttack : MonoBehaviour
                 foreach (var enemigo in enemigosGolpeados)
                 {
                     Debug.Log("Golpeaste al enemigo con el Especial (Dash): " + enemigo.name);
+
+                    // NUEVO: Dañar bloque al hacer Dash contra él
+                    DestructibleBlock bloque = enemigo.GetComponent<DestructibleBlock>();
+                    if (bloque != null) bloque.RecibirDaño(daño);
                 }
             }
         }
@@ -221,6 +228,9 @@ public class PlayerAttack : MonoBehaviour
         foreach (Collider2D enemigo in enemigosGolpeados)
         {
             Debug.Log("Golpeaste a: " + enemigo.name);
+
+            DestructibleBlock bloque = enemigo.GetComponent<DestructibleBlock>();
+            if (bloque != null) bloque.RecibirDaño(daño);
         }
     }
 
@@ -236,6 +246,9 @@ public class PlayerAttack : MonoBehaviour
         {
             Debug.Log("Golpeaste al enemigo hacia abajo: " + enemigo.name);
              enemigoGolpeado = true;
+
+            DestructibleBlock bloque = enemigo.GetComponent<DestructibleBlock>();
+            if (bloque != null) bloque.RecibirDaño(daño);
         }
 
         if (enemigoGolpeado)
